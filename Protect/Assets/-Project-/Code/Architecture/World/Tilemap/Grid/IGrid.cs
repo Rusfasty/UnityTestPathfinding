@@ -1,8 +1,10 @@
-using Code.Tester.World.Tilemap;
-using System;
+using UnityEngine;
 
-namespace Code.Architecture.World.Tilemap {
-    public interface IGrid {
-        public void Create(int X, int Y, Tile tile);
+namespace Code.Architecture.World.TIlemap {
+    public interface IGrid<T> where T : ITile {
+        void CreateTile(int x, int y, T Tile);
+        void Set(int x, int y, T Tile) {
+
+        }
     }
 }
